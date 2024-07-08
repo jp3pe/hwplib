@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    volumes:
+      - ./data:/tmp
+    command: cp /app/target/hwplib-1.1.6.jar /tmp/hwplib-1.1.6.jar && tail -f /dev/null
